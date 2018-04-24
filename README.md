@@ -20,4 +20,6 @@ for Linux：
    python3 -m venv . 创建虚拟环境
    source bin/activate 进入虚拟环境
    deactivate        安全退出虚拟环境
-3. 安装
+3. 安装django
+   pip install django=1.11
+   查看是否安装成功的方法与windows下面一样
