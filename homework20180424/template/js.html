@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for cs in c %}
+        班级编号: {{ cs.id }}
+        班级名称：{{ cs.c_name }}
+        班级人数：{{ cs.c_stu_nums }}
+        班级简介：{{ cs.c_intro }}
+        <br>
+    {% endfor %}
+
+    {% for stu in stus %}
+        ID: {{ stu.id }}
+        姓名：{{ stu.stu_name }}
+        性别：{{ stu.stu_sex }}
+        生日：{{ stu.stu_birth }}
+        电话：{{ stu.stu_tel }}
+        班级：{{ stu.stu_class }}
+        <br>
+    {% endfor %}
+
+</body>
+</html>

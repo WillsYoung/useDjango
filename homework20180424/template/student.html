@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for stu in stus %}
+        ID: {{ stu.id }}
+        姓名：{{ stu.stu_name }}
+        性别：{{ stu.stu_sex }}
+        生日：{{ stu.stu_birth }}
+        电话：{{ stu.stu_tel }}
+        班级：{{ stu.stu_class }}
+        <a href="/school/delstu/?stu_id={{ stu.id }}">删除</a>
+        <a href="/school/upstu/?stu_id={{ stu.id }}">修改</a>
+        <br>
+    {% endfor %}
+</body>
+</html>

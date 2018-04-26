@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    {% for cs in c %}
+        <a href="{% url 's:s' cs.id %}">
+
+        班级编号: {{ cs.id }}
+        </a>
+        <a href="studs/?={{ cs.c_name }}">
+
+        班级名称：{{ cs.c_name }}
+        </a>
+        班级人数：{{ cs.c_stu_nums }}
+        班级简介：{{ cs.c_intro }}
+        <a href="add_stu/">添加学生</a>
+        <br>
+    {% endfor %}
+</body>
+</html>

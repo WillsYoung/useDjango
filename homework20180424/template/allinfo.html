@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    id:  {{ stu.id }}<br>
+    姓名：{{ stu.stu_name }}<br>
+    性别：{% if stu.stu_sex %}
+           男
+          {% else %}
+           女
+          {% endif %}<br>
+
+    生日：{{ stu.stu_birth | date:"Y-m-d"}}<br>
+    电话: {{ stu.stu_tel }}<br>
+    班级：{{ stu.stu_class }}<br>
+    家庭地址：{{ info.stu_addr }}
+
+
+
+</body>
+</html>
